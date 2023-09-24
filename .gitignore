@@ -1,0 +1,3 @@
+/downloads/*
+/cypress/results/*
+output.json
