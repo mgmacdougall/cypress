@@ -1,0 +1,26 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "merge-json": "npx mochawesome-merge ./cypress/results/*.json -o ./output.json",
+    "marge": "npx marge ./output.json",
+    "post-build": "npm run merge-json && npm run marge",
+    "cy:run:chrome": "npx cypress run --browser chrome",
+    "cy:run:chromium": "npx cypress run --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "4.3.8",
+    "cypress": "13.2.0",
+    "mocha": "10.2.0"
+  },
+  "devDependencies": {
+    "mochawesome": "7.1.3",
+    "mochawesome-merge": "4.3.0",
+    "mochawesome-report-generator": "6.2.0"
+  }
+}
