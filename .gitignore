@@ -1,3 +1,6 @@
 /downloads/*
 /cypress/results/*
 output.json
+mochawesome-report/*
+/docs/*
+docs/*
